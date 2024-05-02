@@ -14,10 +14,12 @@ body{
     content: "\0154";
 }
 aside{
-    background-color: green;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    color: white;
 }
 .my_nav-side-bar{
-    width: 100PX;
+    width: 75px;
     bottom: 0;
     top: 86px;
 }
