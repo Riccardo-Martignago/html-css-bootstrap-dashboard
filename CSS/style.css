@@ -3,15 +3,58 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+/*RESET IMG*/
+img{
+    display: block;
+    max-width: 100%;
+}
+header{
+    background-color: #f8f9fa;
+}
 .my_bell{
     color: #ff8f00;
 }
+.my_list::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0ca";
+}
+.my_quest::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f059";
+}
+.my_points::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f142";
+}
+.my_house::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f015";
+}
+.my_chart::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\e473";
+}
+.my_signal::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f012";
+}
+.my_gear::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f013";
+}
+.my_plus::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\2b";
+}
 .my_logo-sm{
     max-width: 60px;
-}
-[type="search"]::before{
-    font-family: 'Font Awesome 5 Free';
-    content: "\0154";
 }
 aside{
     background-image: url(../img/sidebar-bg.png);
@@ -26,11 +69,8 @@ aside{
 .my_container{
     margin-left: 75px;
 }
-.b23{
-    border: 3px solid green;
-    background-color: #ff8f00;
-}
-img{
-    display: block;
-    max-width: 100%;
+.my_bg-bl-wi{
+    background-color: #1b72e8;
+    color: white;
+    border: 3px solid black;
 }
