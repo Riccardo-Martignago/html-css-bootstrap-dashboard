@@ -14,6 +14,10 @@ header{
 .my_bell{
     color: #ff8f00;
 }
+.my_lens::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f002";
+}
 .my_list::before{
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -53,8 +57,24 @@ header{
     font-family: 'Font Awesome 5 Free';
     content: "\2b";
 }
+.my_trash::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f1f8";
+}
+.my_pen::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f304";
+}
 .my_logo-sm{
     max-width: 60px;
+}
+.my_search-bar{
+    background-color: #e5e5e5;
+    border: transparent;
+    padding: .8rem .3rem;
+}
+.my_user-mw{
+    max-width: 37px;
 }
 aside{
     background-image: url(../img/sidebar-bg.png);
@@ -72,6 +92,8 @@ aside{
 .my_bg-bl-wi{
     background-color: #1b72e8;
     color: white;
-    border: 3px solid black;
+}
+.my_bt-s{
+    padding: .01rem .5rem;
 }
 /*ciao*/
