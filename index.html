@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg">
+    <header class="sticky-top d-flex">
+        <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid d-flex flex-nowrap bg-white">
                 <a class="navbar-brand m-0" href="#">
-                    <img src="./img/mobile-logo.png" alt="Logo" class="my_logo-sm">
+                    <img src="./img/mobile-logo.png" alt="Logo" class="my_logo-sm d-lg-none">
+                    <img src="./img/logo.svg" alt="Logo" class="my_logo-lg d-none d-lg-block">
                 </a>
                 <form class="d-flex w-100" role="search">
                     <div class="input-group no-wrap mx-3">
@@ -34,7 +35,7 @@
                             <a class="nav-link my_quest" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my_points" aria-disabled="true"></a>
+                            <a class="nav-link my_points" href="#"></a>
                         </li>
                     </ul>
                 </div>
@@ -61,18 +62,24 @@
         <div class="d-flex">
             <aside class="my_nav-side-bar position-fixed d-flex flex-column justify-content-between py-4 text-center">
                 <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand my_house pb-2" aria-current="page" href="#"></a>
+                    <li class="nav-item d-flex justify-content-center">
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_house d-lg-none"></button>
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_house d-none d-lg-block"> Home</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand my_chart pb-2" href="#"></a>
+                    <li class="nav-item d-flex justify-content-center">
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_chart d-lg-none"></button>
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_chart d-none d-lg-block"> Stats</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand my_signal pb-2" href="#"></a>
+                    <li class="nav-item d-flex justify-content-center">
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_signal d-lg-none"></button>
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_signal d-none d-lg-block"> Signals</button>
                     </li>
                 </ul>
                 <div class="nav flex-column">
-                    <a class="nav-link navbar-brand my_gear" href="#"></a>
+                    <div class="nav-item d-flex justify-content-center">
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_gear d-lg-none"></button>
+                        <button type="button" class="nav-link navbar-brand btn btn-outline-secondary my_gear d-none d-lg-block"> Admin</button>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -181,6 +188,12 @@
                                         <th scope="col">
                                             Nome
                                         </th>
+                                        <th scope="col" class="text-center d-none d-md-table-cell">
+                                            Data inizio
+                                        </th>
+                                        <th scope="col" class="text-center d-none d-md-table-cell">
+                                            ROI
+                                        </th>
                                         <th scope="col" class="text-center">
                                             Stato
                                         </th>
@@ -191,7 +204,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td scope="row my_class">
+                                        <td>
                                             <div class="d-flex align-items-center">
                                                 <img src="./img/class-avatar.jpg" alt="" class="rounded-circle my_user-mw">
                                                 <p class="m-0 px-2">
@@ -199,6 +212,16 @@
                                                 </p>
                                             </div>
                                         </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                15 Feb 2021
+                                            </p>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                20%
+                                            </p>
+                                        </td>
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <button type="button" class="btn btn-success my_bt-s">
@@ -214,7 +237,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row my_class">
+                                        <td scope="row">
                                             <div class="d-flex align-items-center">
                                                 <img src="./img/class-avatar.jpg" alt="" class="rounded-circle my_user-mw">
                                                 <p class="m-0 px-2">
@@ -222,6 +245,16 @@
                                                 </p>
                                             </div>
                                         </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                15 Feb 2021
+                                            </p>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                20%
+                                            </p>
+                                        </td>
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <button type="button" class="btn btn-success my_bt-s">
@@ -237,13 +270,23 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row my_class">
+                                        <td scope="row">
                                             <div class="d-flex align-items-center">
                                                 <img src="./img/class-avatar.jpg" alt="" class="rounded-circle my_user-mw">
                                                 <p class="m-0 px-2">
                                                     Classe 77
                                                 </p>
                                             </div>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                15 Feb 2021
+                                            </p>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                20%
+                                            </p>
                                         </td>
                                         <td>
                                             <div class="d-flex justify-content-center">
@@ -260,13 +303,23 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row my_class">
+                                        <td scope="row">
                                             <div class="d-flex align-items-center">
                                                 <img src="./img/class-avatar.jpg" alt="" class="rounded-circle my_user-mw">
                                                 <p class="m-0 px-2">
                                                     Classe 78
                                                 </p>
                                             </div>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                15 Feb 2021
+                                            </p>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                20%
+                                            </p>
                                         </td>
                                         <td>
                                             <div class="d-flex justify-content-center">
@@ -283,13 +336,23 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row my_class">
+                                        <td scope="row">
                                             <div class="d-flex align-items-center">
                                                 <img src="./img/class-avatar.jpg" alt="" class="rounded-circle my_user-mw">
                                                 <p class="m-0 px-2">
                                                     Classe 79
                                                 </p>
                                             </div>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                15 Feb 2021
+                                            </p>
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            <p class="text-center">
+                                                20%
+                                            </p>
                                         </td>
                                         <td>
                                             <div class="d-flex justify-content-center">
